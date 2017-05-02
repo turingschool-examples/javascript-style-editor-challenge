@@ -1,0 +1,27 @@
+{
+  "name": "javascript-style-editor-challenge",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmacaulay/javascript-style-editor-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmacaulay/javascript-style-editor-challenge/issues"
+  },
+  "homepage": "https://github.com/cmacaulay/javascript-style-editor-challenge#readme"
+}
