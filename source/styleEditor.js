@@ -1,5 +1,5 @@
 
-var doSomething = function(){
+var stylePage = function(){
   event.preventDefault();
   var values = {};
   var $inputs = $('#style_editor :input' );
@@ -10,6 +10,6 @@ var doSomething = function(){
 };
 
 $(document).ready(function(){
-  $("#style_editor").submit(doSomething)
+  $("#style_editor").submit(stylePage)
 
 });
