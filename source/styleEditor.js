@@ -1,3 +1,11 @@
 $(document).ready(function(){
-  // your code goes here.
+  
+  $("input[type='submit']").click(function() {
+    event.preventDefault()
+    var selector = $("input[name='selector']").val()
+    var property = $("input[name='property']").val()
+    var value = $("input[name='value']").val()
+    $(selector).css(property, value) 
+  })
+  
 });
