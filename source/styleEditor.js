@@ -5,7 +5,7 @@ const processSubmit = (e) => {
   const property = $('#style_editor input[name="property"]').val()
   const value = $('#style_editor input[name="value"]').val()
 
-  console.log(selector, property, value)
+  $(selector).css(property, value)
 }
 
 
