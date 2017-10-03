@@ -1,11 +1,10 @@
 $(document).ready(function(){
-  $('#style_editor').on('submit', function(e){
+  $('#style_editor').submit(function(e){
     e.preventDefault();
     let data = $("#style_editor :input").serializeArray();
-    console.log(data);
     let results = data.map(function(a) {
       return a.value;
     });
-    console.log(results);
+    $(results[0]).css(results[1], results[2]);
   });
 });
