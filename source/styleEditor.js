@@ -1,8 +1,7 @@
 $(document).ready(function(){
-  //let selector = ($('selector').attr('name')).val();
-  $('selector').attr('name').submit(alert("test"));
-  //let selector = $("[name='selector']").val();
-  //let selector = $("[name='selector']").val();
-  //let property = $("[name='property']").val();
-  //let value = $("[name='value']").val();
+  $('#style_editor').on('submit', function(e){
+    e.preventDefault();
+    var data = $("#style_editor :input").serializeArray();
+    console.log(data);
+  });
 });
