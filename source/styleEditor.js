@@ -7,8 +7,7 @@ $(document).ready(function(){
     var property = $(style_editor[name="property"]).val();
     var value = $(style_editor[name="value"]).val();
 
-    console.log( "button was clicked ");
-    console.log( selector, property, value );
+    $(selector).css(property, value)
   });
 
 });
