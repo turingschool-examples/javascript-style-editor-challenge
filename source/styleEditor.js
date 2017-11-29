@@ -1,3 +1,9 @@
 $(document).ready(function(){
-  // your code goes here.
+  $( "#style_editor" ).submit(function( event ) {
+      event.preventDefault();
+      var cssSelector = $('#select').val();
+      var property = $('#prop').val();
+      var value = $('#val').val();
+      $(cssSelector).css(property, value);
+  });
 });
