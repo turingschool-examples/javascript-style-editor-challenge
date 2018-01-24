@@ -2,8 +2,7 @@ $(document).ready(function(){
   $('form').on('submit', function(event) {
     event.preventDefault()
   })
-  var inputElements = document.getElementsByTagName('input')
-  var submitButton  = inputElements[3]
+  var submitButton  = document.getElementsByTagName('input')[3]
   submitButton.addEventListener('click', stylePage)
 })
 
