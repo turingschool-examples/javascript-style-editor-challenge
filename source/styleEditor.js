@@ -1,3 +1,9 @@
 $(document).ready(function(){
-  // your code goes here.
+  $('#submit-button').click( () => {
+    event.preventDefault();
+    let selector = $('#css-selector').val();
+    let property = $('#property').val();
+    let value = $('#value').val();
+    $(selector).css(property, value)
+  })
 });
