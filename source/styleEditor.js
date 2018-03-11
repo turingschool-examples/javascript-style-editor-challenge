@@ -1,9 +1,11 @@
 $(document).ready(function(){
-  // your code goes here.
-});
-$("input[style=submit]").on("click", function (event) {
-  event.preventDefault();
-  console.log($('input[name=selector]'));
+  $("input[type=submit]").on("click", function (event) {
+    event.preventDefault();
+    console.log($('input[name=selector]').val());
+    console.log($('input[name=property]').val());
+    console.log($('input[name=value]').val());
+  
+  });
 
 });
 
