@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $("input[type=submit]").on("click", function (event) {
     event.preventDefault();
-    console.log($('input[name=selector]').val());
-    console.log($('input[name=property]').val());
-    console.log($('input[name=value]').val());
-  
+    let thisSelector = $('input[name=selector]').val();
+    let thisProperty = $('input[name=property]').val();
+    let thisValue  =$('input[name=value]').val();
+    $(thisSelector).css(thisProperty, thisValue);
   });
 
 });
